@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap');
+
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+h1 {
+    text-align: center;
+    color: #88959a;
+    font-size: 47px;
+}
+
+h2 {
+    color: #88959a;
+}
+
+textarea {
+    width: 100%;
+    padding: 70px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: #f6f6f6;
+    box-shadow: 2px 2px 4px #999;
+}
+
+.resizable-textarea {
+    resize: both;
+    overflow: auto;
+
+}
+
+/* .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+} */
+
+.custom-file-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    padding: 20px 50px;
+    outline: none;
+    border: none;
+    background-color: #f6f6f6;
+    box-shadow: 2px 2px 4px #999;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.custom-file-upload span {
+    margin-right: 8px;
+}
+
+.custom-file-upload .clip-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* .form button {
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+} */
